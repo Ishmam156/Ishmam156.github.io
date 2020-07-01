@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Boostrap inclusion -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <!-- CSS file -->
+        <link rel="stylesheet" href="css/main.css">
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="img/favicon.ico">
+        <title>Advanced Search</title>
+    </head>
+    <body>
+        <div class="container">
+            <!-- Navigation Pane -->
+            <div class='navigation'>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                    <a class="nav-link" href="index.html">Web Search</a>
+                    </li>
+                </ul>
+            </div>
+            <br>
+            <!-- Welcome Text -->
+            <p class="row adv_text">Advanced Search</p>
+
+            <hr class="row">
+
+            <!-- Search Parameters -->
+            <p class="row adv_start">Find pages with...</p>
+
+            <form class="advanced_search" action="https://www.google.com/search?">
+                <div class="row adv_row">
+                        <span class="col-3">all these words:</span> 
+                        <input class="col-4" type="text" name="as_q">
+                </div>
+                <div class="row adv_row">
+                        <span class="col-3">this exact word or phrase:</span>
+                        <input class="col-4" type="text" name="as_epq">
+                </div>
+                <div class="row adv_row">
+                        <span class="col-3">any of these words:</span> 
+                        <input class="col-4" type="text" name="as_oq">
+                </div>
+                <div class="row adv_row">
+                        <span class="col-3">none of these words:</span>
+                        <input class="col-4" type="text" name="as_eq">
+                </div>
+                <div class="row adv_row justify-content-end">
+                        <input class="col-2 adv_submit" type="submit" value="Advanced Search">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

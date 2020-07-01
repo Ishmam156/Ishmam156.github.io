@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Boostrap inclusion -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <!-- CSS file -->
+        <link rel="stylesheet" href="css/main.css">
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="img/favicon.ico">
+        <title>Image Search</title>
+        <script>
+            function success() {
+                 if(document.getElementById("textsend").value==="") { 
+                    document.getElementById('button1').disabled = true; 
+                    document.getElementById('button2').disabled = true; 
+                    } else { 
+                    document.getElementById('button1').disabled = false;
+                    document.getElementById('button2').disabled = false;
+                    }
+                }
+        </script>
+    </head>
+    <body>
+        <!-- Navigation Pane -->
+        <div class="container">
+            <div class='navigation'>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Web Search</a>
+                  </li>
+            </div>
+
+            <br>
+            <!-- Logo -->
+            <div class='logo row justify-content-center align-items-center'>
+                <div class="col-3">
+                    <img src="img/google_images.png" alt="logo" width="272" height="92">
+                </div>
+            </div>
+
+            <!-- Search Box -->
+            <form action="https://www.google.com/search?">
+                <div class="row justify-content-center search_box pt-0">
+                    <input class="col-6 input_box" id="textsend" onkeyup="success()" type="text" name="q" placeholder="Search here" autofocus>
+                </div>
+                <input type="text" name="tbm" hidden value="isch">
+                <div class="row justify-content-center">
+                    <input class="col-2 search_button" id="button1" type="submit" value="Google Search">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
